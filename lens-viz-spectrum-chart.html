@@ -1,7 +1,7 @@
 <link rel="import" href="../polymer/polymer.html">
 <link rel="import" href="../th-d3-chart/th-d3-chart.html">
 
-<polymer-element name="th-spectrum-chart" extends="th-d3-chart">
+<polymer-element name="lens-viz-spectrum-chart" extends="th-d3-chart">
 
 	<template>
 	    <core-style ref="theme"></core-style>
@@ -44,7 +44,7 @@
 	</template>
 
 	<script>
-		Polymer('th-spectrum-chart', {
+		Polymer('lens-viz-spectrum-chart', {
 		  chartData: [
 		  		{label: 'Medicaid', range_min_value: 10, range_min_display_value: '$10', range_max_value: 50, range_max_display_value: '$50', color:'', offset: -20},
 		        {label: 'Federal',  pattern: 'stripe',  range_min_value: 40, range_min_display_value: '$40', range_max_value: 60, range_max_display_value: '$60', color: '', offset: -10},
@@ -367,7 +367,7 @@
 
           getMetaData: function() {
           	return {
-					  "name": "th-spectrum-chart",
+					  "name": "lens-viz-spectrum-chart",
 					  "description": "Thelma spectrum chart",
 					  "category":"chart",
 					  "version": "0.0.1",
